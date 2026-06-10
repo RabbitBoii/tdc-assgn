@@ -2,7 +2,16 @@
 
 An internal matchmaking dashboard for **The Date Crew** — a premium Indian matrimonial service. Built for matchmakers to manage client profiles, view AI-ranked match suggestions, and send curated introductions.
 
-**Live Demo:** [tdc-dashboard.vercel.app](https://tdc-dashboard.vercel.app)  
+## Screenshots
+
+![Login Screenshot](./frontend/public/ss1.png)
+
+![Dashboard Screenshot](./frontend/public/ss2.png)
+
+![Profile Screenshot](./frontend/public/ss3.png)
+
+
+**Live Demo:** [tdc-dashboard.vercel.app](https://tdc-assgn-tfea.vercel.app)  
 **Backend API:** [tdc-assgn.onrender.com](https://tdc-assgn.onrender.com)
 
 **Sample credentials:**

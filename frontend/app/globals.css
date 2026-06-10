@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* ── Colors ── */
+  --color-plum:           #1A0A0F;
+  --color-plum-light:     #2D1520;
+  --color-crimson:        #8B1A2F;
+  --color-crimson-light:  #A82040;
+  --color-crimson-muted:  #5C1120;
+  --color-gold:           #C9956A;
+  --color-gold-light:     #DDB48A;
+  --color-gold-muted:     #8A6245;
+  --color-parchment:      #F7F0E8;
+  --color-parchment-dark: #E8DDD0;
+
+  /* ── Fonts ── */
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body:    "Inter", sans-serif;
+
+  /* ── Animations (keyframes defined below) ── */
+  --animate-spin-slow:         spin-slow 20s linear infinite;
+  --animate-spin-slow-reverse: spin-slow-reverse 15s linear infinite;
+  --animate-fade-up:           fade-up 0.6s ease forwards;
+  --animate-fade-in:           fade-in 0.4s ease forwards;
+  --animate-shimmer:           shimmer 2s linear infinite;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes spin-slow-reverse {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes shimmer {
+  from { background-position: -200% 0; }
+  to   { background-position: 200% 0; }
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #1A0A0F;
+  color: #F7F0E8;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2D1520;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8B1A2F;
+  border-radius: 2px;
+}
+
+.status-new {
+  background: #1a3a2a;
+  color: #4ade80;
+  border: 1px solid #166534;
+}
+
+.status-active {
+  background: #1a2a3a;
+  color: #60a5fa;
+  border: 1px solid #1d4ed8;
+}
+
+.status-on_hold {
+  background: #3a2a1a;
+  color: #fb923c;
+  border: 1px solid #9a3412;
+}
+
+.status-matched {
+  background: #2a1a3a;
+  color: #c084fc;
+  border: 1px solid #7e22ce;
+}
+
+.match-excellent {
+  background: #1a3020;
+  color: #4ade80;
+  border: 1px solid #166534;
+}
+
+.match-high {
+  background: #1a2535;
+  color: #60a5fa;
+  border: 1px solid #1d4ed8;
+}
+
+.match-good {
+  background: #2D1520;
+  color: #C9956A;
+  border: 1px solid #8A6245;
+}
+
+.match-possible {
+  background: #2a2520;
+  color: #a8a29e;
+  border: 1px solid #57534e;
+}

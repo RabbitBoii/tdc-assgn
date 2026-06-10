@@ -1,0 +1,12 @@
+# ─── Python (backend) ─────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# virtual environments
+.venv/
+venv/
+env/
+.env

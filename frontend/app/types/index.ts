@@ -42,7 +42,7 @@ export interface Profile {
   drinking?: string
   smoking?: string
   photo_url?: string
-  status_tag?: string
+  status_tag: string
   notes?: string
 }
 

@@ -1,6 +1,7 @@
 fastapi
 uvicorn[standard]
 python-jose[cryptography]
+brcypt == 4.0.2
 passlib[bcrypt,disabled]
 httpx
 python-dotenv
